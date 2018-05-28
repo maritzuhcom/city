@@ -2,22 +2,31 @@ import React from 'react';
 import styled from 'styled-components';
 import Title from '../common/Title';
 import Search from '../common/Search';
-import Content from '../common/Content';
+import ImageGrid from './ImageGrid';
 
 const Home = () => (
   <Container>
-    <Title />
-    <Search />
-    <Content />
+    <TitleSection>
+      <Title />
+      <Search />
+    </TitleSection>
+    <ImageGrid />
   </Container>
 
 );
 
 export default Home;
 
+const TitleSection = styled.section`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+`;
+
+
 const Container = styled.div`
   height: 100%;
   width: 100%;
-  display: flex;
-  flex-direction: column;
+  background-color: rgb(54, 54, 55);
+  overflow: auto;
 `;

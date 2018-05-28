@@ -4,9 +4,7 @@ import styled from 'styled-components';
 
 const Title = props => (
   <Main className="title">
-    <section>
-      <Span>{props.title}</Span>
-    </section>
+    <Span>{props.title}</Span>
   </Main>
 );
 
@@ -15,22 +13,20 @@ Title.propTypes = {
 };
 
 Title.defaultProps = {
-  title: 'App',
+  title: 'App Name Goes Here',
 };
 
 export default Title;
 
 const Main = styled.main`
   width: 100%;
-  height: 5em;
-  background-color: #458588;
-  color: #003333;
+  height: 9em;
   display: flex;
   justify-content: center;
   align-items: center;
 `;
 
 const Span = styled.span`
-  font-size: 2em;
-  font-weight: 600;
+  font-size: 1.7em;
+  color: white;
 `;
